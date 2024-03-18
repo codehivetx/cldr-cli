@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx tsc -b",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "regen": "npx swagger-typescript-api -p https://st.unicode.org/openapi/ -o ./src/st-client/ -n st-client.ts"
+    "regen": "npx openapi-axios"
   },
   "author": "Steven R. Loomis <srl295@codehivetx.us>",
   "license": "Unicode-3.0",
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
+    "openapi-axios": "^0.17.1",
     "typescript": "^5.3.3"
   }
 }
