@@ -5,13 +5,13 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "npx tsc -b",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "regen": "npx swagger-typescript-api -p https://st.unicode.org/openapi/ -o ./src/st-client/ -n st-client.ts"
   },
   "author": "Steven R. Loomis <srl295@codehivetx.us>",
   "license": "Unicode-3.0",
   "dependencies": {
-    "commander": "^12.0.0",
-    "swagger-client": "^3.25.4"
+    "commander": "^12.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
